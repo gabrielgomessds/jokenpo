@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joquenpo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Pedra, Papel, Tesoura</h1>
+    </header>
+
+    <div class="container">
+        <div class="score-container">
+            <span class="user"><i class='bx bx-user'></i> Você</span>
+            <span id="score"></span>
+            <span class="com"><i class='bx bx-desktop' ></i> Com</span>
+        </div>
+
+        <div class="buttons">
+            <button id="rock" class="btn" onclick="game(this.value)" value="rock"><img src="assets/images/rocha.png" alt=""></button>
+            <button id="paper" class="btn" onclick="game(this.value)" value="paper"><img src="assets/images/papel.png" alt=""></button>
+            <button id="scissors" class="btn" onclick="game(this.value)" value="scissors"><img src="assets/images/tesoura.png" alt=""></button>
+        </div>
+
+        <div class="challenge">
+            <div class="you">
+                <div class="YourObject"></div>
+                <div class="who">Você </div>
+            </div>
+            
+            <div class="result"><p id="who">Você ganhou</p></div>
+
+            <div class="comp">
+                <div class="ComObject"></div>
+                <div class="who">Computador</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
